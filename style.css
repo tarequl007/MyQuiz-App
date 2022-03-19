@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.myQuiz {
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: rgb(0 0 0 /10%) 0px 10px 50px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    border-radius: 48px;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.img img {
+    width: 100%;
+}
+
+.text {
+    width: 90%;
+    margin: auto;
+}
+
+.text h3 {
+    margin-top: 20px;
+}
+
+.myBtn button {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: tomato;
+    border: none;
+    outline-style: none;
+    color: #fff;
+    padding: 6px 25px;
+    cursor: pointer;
+    border-radius: 57px 0px 51px 0px;
+    transition: 0.2s ease-in-out;
+}
+
+.myBtn button:hover {
+    background-color: rgb(29, 184, 194);
+}
+
+.myBtn {
+    width: 60%;
+    margin-left: 167px !important;
+    margin-top: 7px;
+}
