@@ -29,6 +29,7 @@ continueBtn.onclick = () => {
 }
 
 
+
 // Question dynamic area
 
 const showQuestion = (index) => {
@@ -42,5 +43,30 @@ const showQuestion = (index) => {
 
     myOption.innerHTML = option;
 
+    // Add footer question list in the page
 
+    const totalQuestion = document.querySelector('.total-Question');
+
+    let totalQuestionTag = `<p>${questionArray[index].numb} of ${questionArray.length} Question</p>`
+
+    totalQuestion.innerHTML = totalQuestionTag;
+
+
+}
+
+
+// Next Quesion button
+
+const nextBtn = document.querySelector('.nextBtn')
+
+let questionCount = 0;
+
+nextBtn.onclick = () => {
+    if (questionCount < questionArray.length - 1) {
+        questionCount++;
+        showQuestion(questionCount);
+    } else {
+        alert('Your Question is Finished.')
+
+    }
 }
