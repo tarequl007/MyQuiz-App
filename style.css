@@ -17,7 +17,7 @@ body {
     box-shadow: rgb(0 0 0 /10%) 0px 10px 50px;
     background-color: #fff;
     transform: translate(-50%, -50%);
-    border-radius: 48px;
+    border-radius: 52px 40px;
     font-size: 20px;
     margin-bottom: 100px;
 }
@@ -71,7 +71,7 @@ body {
     box-shadow: rgb(0 0 0 /10%) 0px 10px 50px;
     background-color: #fff;
     transform: translate(-50%, -50%);
-    border-radius: 48px;
+    border-radius: 52px 40px;
     font-size: 20px;
     pointer-events: none;
     opacity: 0;
@@ -153,9 +153,19 @@ ol li {
     box-shadow: rgb(0 0 0 /10%) 0px 10px 50px;
     background-color: #fff;
     transform: translate(-50%, -50%);
-    border-radius: 48px;
+    border-radius: 52px 45px;
     font-size: 20px;
+    pointer-events: none;
+    opacity: 0;
 }
+
+.question.activeQuiz {
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%)scale(1);
+}
+
 
 .question-Header {
     position: relative;
@@ -277,5 +287,3 @@ footer button {
 footer .nextBtn:hover {
     background-color: rgb(29, 184, 194);
 }
-
-113: minute
